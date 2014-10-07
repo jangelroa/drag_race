@@ -27,25 +27,22 @@ vehicles behave differently, dependent upon their varying characteristics
   the start line visually
 
 ## Properties
+
 * An engine that produces some power
 * Mass
-* A drag coefficient
 
 ## Functions
-* A way to start a car(also entails have it be put it into gear)
+
+* A way to start a car (engine running)
+* A way to stop the car (engine not running)
+* Put it into gear
+* Put it into park
 * A way to apply power
-* A way to stop the car(and putting it into park)
 
 ## In addition
 
-* A GoCar may only be driven if its in drive. Same with the Audi.
-* A motorcycle may only be driven by shifting through gears at certain
-  speeds, and must be put in first, before it can go anywhere.  The speeds 
-at which the motorcycle needs to switch gears, before proceeding:
-    * 2nd gear: 10-30mph
-    * 3rd gear: 30-45mph
-    * 4th gear: 45-65mph
-    * 5th gear: 65-90mph
+* A GoCar may only be driven if its in drive. Same with the Audi
+* A motorcycle needs to be upshifted to accelerate
 * A semi needs to have its air brakes applied, before it may stop
 
 ## Bonus
@@ -60,7 +57,17 @@ finish line
 * Take vehicles out of the race
 * Show the velocity of the vehicle as its moving
 
-## Super-super-bonus
+## Super-duper bonus
+
+* A motorcycle may only be driven by shifting through gears at certain
+  speeds, and must be put in first, before it can go anywhere.  The speeds 
+at which the motorcycle needs to switch gears, before proceeding:
+    * 2nd gear: 10-30mph
+    * 3rd gear: 30-45mph
+    * 4th gear: 45-65mph
+    * 5th gear: 65-90mph
+
+## Super-super-duper-bonus
 
 * Implement deceleration and show it in the demo
   * Think about what deceleration would entail, and don't do it, unless
