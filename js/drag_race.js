@@ -1,3 +1,3 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-  console.log(window.AvailableCars);
+  // how do we get the car to start and show a puff of smoke?
 });
