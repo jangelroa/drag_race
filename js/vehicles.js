@@ -1,5 +1,14 @@
 document.addEventListener("DOMContentLoaded", function(event) {
   var DragStripView = function() {
+    var vehicles = [
+      "vehicle1", 
+      "vehicle2", 
+      "vehicle3", 
+      "vehicle4"
+    ];
+    for (var i = 0; i < vehicles.length; i++) {
+      new Vehicle(vehicles[i]).start();
+    }
     // what can we do with the drag strip view
     // in order to be able to work with multiple vehicle views? 
     //
@@ -16,8 +25,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // what do we have to do in index.html?
   };
 
-  var VehicleView = function() {
-    var $el = document.getElementById('vehicle1'),
+  var VehicleView = function(carId) {
+    var $el = document.getElementById(carId),
         $exhaust = $el.querySelector('.exhaust'),
         hideExhaust = function() {
           $exhaust.className += ' fade';
@@ -27,23 +36,33 @@ document.addEventListener("DOMContentLoaded", function(event) {
       $exhaust.setAttribute('style', 'display: inline');
       window.setTimeout(hideExhaust, 2400);
     };
+
+    this.move = function() {
+      $el.className += ' move';
+      
+      // $el.style.left = "500px";
+    }
   };
 
-  var Vehicle = function () {
+  var Vehicle = function (carId) {
     var engine = { running: false }, 
-        view = new VehicleView();
+        view = new VehicleView(carId);
 
     this.start = function() {
       engine.running = true;
       view.startRunning();
     };
 
+    this.race = function() {
+      view.move();
+    }
+
     this.stop = function() {
       engine.running = false;
     };
   };
 
-  window.AvailableCars = {
-    vehicle: new Vehicle()
+  window.Views = {
+    DragStripView: DragStripView
   };
 });

@@ -1,3 +1,3 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-  window.AvailableCars.vehicle.start();
+  new window.Views.DragStripView();
 });

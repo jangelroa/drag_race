@@ -1,5 +1,6 @@
 #drag_strip, .vehicle {
   position: absolute;
+  left: 30px;
 }
 h2, #start_line {
   margin-left: 80px;
@@ -21,20 +22,29 @@ h2, #start_line {
   background: red;
   margin-right: 50px;
 }
+#start_race {
+  margin-top: 475px;
+}
 .vehicle {
   background: #ccc;
   width: 50px;
   height: 50px;
   color: white;
 }
-#vehicle1, #vehicle2 {
-  left: 30px;
-}
 #vehicle1 {
   top: 0px;
 }
 #vehicle2 {
-  top: 100px;
+  top: 50px;
+}
+#vehicle2 {
+  top: 200px;
+}
+#vehicle3 {
+  top: 300px;
+}
+#vehicle4 {
+  top: 400px;
 }
 .vehicle .exhaust {
   width: 26px;
@@ -45,4 +55,12 @@ h2, #start_line {
 .fade {
   opacity: 0;
   transition: opacity 0.25s; 
+}
+.move {
+  left: 600px !important;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
 }
