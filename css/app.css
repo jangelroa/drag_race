@@ -1,0 +1,57 @@
+#container {
+	margin-left: 50px;
+}
+
+.car {
+	height: 60px;
+	width: 100px;
+	background-color: brown;
+	border-radius: 5px;
+	position: absolute;
+
+}
+
+#startLine {
+	height: 600px;
+	width: 10px;
+	background-color: green;
+	margin-left: 100px;
+	position: absolute;
+
+
+}
+
+#stopLine {
+	height: 600px;
+	width: 10px;
+	background-color: red;
+	float: right;
+	margin-right: 70px;
+	margin-left: 900px;
+
+
+}
+
+#car1 {
+	top: 150px;
+	background-color: #627193;
+}
+
+#car2 {
+	top: 250px;
+	background-color: #622a93;
+}
+
+#car3 {
+	top: 350px;
+	background-color: #f47193;
+}
+
+.in_finish_line {
+	height: 60px;
+	width: 100px;
+	background-color: brown;
+	border-radius: 5px;
+	position: absolute;
+	margin-left: 300px;
+}
