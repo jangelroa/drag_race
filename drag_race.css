@@ -1,15 +1,25 @@
-h2, #start_line {
-  margin-left: 76px;
+#race, .vehicle {
+  position: absolute;
 }
-#vehicle {
+h2, #start_line {
+  margin-left: 80px;
+}
+.vehicle {
   background: #ccc;
   width: 50px;
   height: 50px;
-  margin-left: -70px;
-  display: inline-block;
   color: white;
 }
-#vehicle #exhaust {
+#vehicle1, #vehicle2 {
+  left: 30px;
+}
+#vehicle1 {
+  top: 0px;
+}
+#vehicle2 {
+  top: 100px;
+}
+.vehicle .exhaust {
   width: 26px;
   height: 15px;
   margin-left: -26px;

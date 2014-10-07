@@ -1,13 +1,14 @@
 document.addEventListener("DOMContentLoaded", function(event) {
   var VehicleView = function() {
-    var $el = document.getElementById('vehicle'),
-        $exhaust = document.getElementById('exhaust');
+    var $el = document.getElementById('vehicle1'),
+        $exhaust = $el.querySelector('.exhaust'),
+        hideExhaust = function() {
+          $exhaust.className += ' fade';
+        };
 
     this.startRunning = function () {
       $exhaust.setAttribute('style', 'display: inline');
-      window.setTimeout(function() {
-        $exhaust.className = 'fade';
-      }, 2400);
+      window.setTimeout(hideExhaust, 2400);
     };
   };
 
