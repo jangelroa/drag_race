@@ -10,5 +10,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   new window.Views.DragStripView(vehicles);
 
-  vehicles.startAll();
+  document.getElementById('start_race').addEventListener(
+    'click', 
+    function(event) {
+      vehicles.startAll();
+    }
+  );
 });
