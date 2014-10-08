@@ -15,6 +15,7 @@
 	height: 600px;
 	width: 10px;
 	background-color: green;
+	float: left;
 	margin-left: 100px;
 	position: absolute;
 
