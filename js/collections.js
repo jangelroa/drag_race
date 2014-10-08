@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function(event) {
   var Vehicles = function(vehicleIds) {
     this.vehicles = [];
-    for (var i = 0; i < vehicleIds.length; i++) {
-      this.vehicles.push(new window.Models.Vehicle(vehicleIds[i]));
-    }
+    vehicleIds.forEach((function(id) {
+      this.vehicles.push(new window.Models.Vehicle(id));
+    }).bind(this));
 
     this.startAll = function() {
       Object.getNotifier(this).notify({
