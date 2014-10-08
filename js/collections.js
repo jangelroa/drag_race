@@ -1,13 +1,19 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-  var Vehicles = function(vehicleIds) {
+  var Vehicles = function(vehicles) {
     this.vehicles = [];
-    vehicleIds.forEach((function(id) {
-      this.vehicles.push(new window.Models.Vehicle(id));
+    vehicles.forEach((function(v) {
+      this.vehicles.push(new window.Models.Vehicle(v.id, v.mass, v.pole));
     }).bind(this));
 
     this.startAll = function() {
       Object.getNotifier(this).notify({
         type: 'start-all'
+      });
+    };
+
+    this.race = function() {
+      Object.getNotifier(this).notify({
+        type: 'begin-race'
       });
     };
   };
