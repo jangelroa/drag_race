@@ -1,5 +1,11 @@
+body { 
+	margin-left: 0px;
+}
+
 #container {
 	margin-left: 50px;
+	position: relative;
+
 }
 
 .car {
@@ -26,26 +32,30 @@
 	height: 600px;
 	width: 10px;
 	background-color: red;
-	float: right;
-	margin-right: 70px;
+	float: left;
 	margin-left: 900px;
 
 
 }
 
-#car1 {
-	top: 150px;
+#vehicle1 {
+	top: 100px;
 	background-color: #627193;
 }
 
-#car2 {
-	top: 250px;
+#vehicle2 {
+	top: 200px;
 	background-color: #622a93;
 }
 
-#car3 {
-	top: 350px;
+#vehicle3 {
+	top: 300px;
 	background-color: #f47193;
+}
+
+#vehicle4 {
+	top: 400px;
+	background-color: #f471fe;
 }
 
 .in_finish_line {
@@ -54,5 +64,4 @@
 	background-color: brown;
 	border-radius: 5px;
 	position: absolute;
-	margin-left: 300px;
 }
